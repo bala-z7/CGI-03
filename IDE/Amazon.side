@@ -1,0 +1,77 @@
+{
+  "id": "4cd57434-f91d-4169-bd5d-85e0e3f4f650",
+  "version": "2.0",
+  "name": "Amazon",
+  "url": "https://www.amazon.in/",
+  "tests": [{
+    "id": "4278702c-bc0c-4348-93b4-0d13cda38586",
+    "name": "Test1",
+    "commands": [{
+      "id": "38c0d4fd-8fe2-4862-b3d9-d2ca16cac0a8",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d047f676-d6bf-4f52-aee1-9c9fd163711c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "789x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb315a5d-ea93-4898-9231-26be22a9a90a",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bcbcb2e-7a57-45c3-a51b-895d5feb1d1b",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Mobile"
+    }, {
+      "id": "732935d3-5fad-4b9b-bde0-4ae9557b8372",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "25f916ed-459d-4bec-bd91-75c822959bb8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4278702c-bc0c-4348-93b4-0d13cda38586"]
+  }],
+  "urls": ["https://www.amazon.in/"],
+  "plugins": []
+}
