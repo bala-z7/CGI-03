@@ -93,10 +93,8 @@ public class Lab_6 {
         
         //15. Add to cart
         driver.findElement(By.xpath("//*[@id=\"button-cart\"]")).click();
-        
-        //17.Vie cart 
-        driver.findElement(By.xpath("//*[@id=\"cart\"]/button")).click();
-        
+
+        //16. Verify Message
         WebElement VerifyMsg2 = driver.findElement(By.xpath("//*[@id=\"content\"]/div[3]/div[2]/a"));
         String Msg2 = VerifyMsg2.getText();
         
@@ -105,6 +103,10 @@ public class Lab_6 {
         } else {
         	System.out.println("verification failed");
         } 
+        
+        //17.Vie cart 
+        driver.findElement(By.xpath("//*[@id=\"cart\"]/button")).click();
+        
         
         driver.findElement(By.xpath("//*[@id=\"cart\"]/ul/li[2]/div/p/a[2]")).click();
         
